@@ -3,10 +3,10 @@
 var chunk = require('lodash.chunk');
 var isArray = require('lodash.isarray');
 var arraySpread = require('array-spread');
+var isWholeNumber = require('is-whole-number');
 
 module.exports = function(arr, element, pos) {
-    // pos % 1 === 0 checks for a whole number
-    if (!isArray(arr) || (!element && element !== false) || (pos % 1 !== 0)) {
+    if (!isArray(arr) || (!element && element !== false) || !isWholeNumber(pos)) {
         return [];
     }
 

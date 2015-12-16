@@ -1,6 +1,6 @@
 {
   "name": "array-append-x",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Append an element for every X element in an array.",
   "main": "array-append-x.js",
   "scripts": {
@@ -34,6 +34,7 @@
   },
   "dependencies": {
     "array-spread": "^1.0.2",
+    "is-whole-number": "^1.0.0",
     "lodash.chunk": "^3.0.1",
     "lodash.isarray": "^3.0.4"
   }
