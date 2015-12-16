@@ -1,0 +1,40 @@
+{
+  "name": "array-append-x",
+  "version": "1.0.0",
+  "description": "Append an element for every X element in an array.",
+  "main": "array-append-x.js",
+  "scripts": {
+    "posttest": "npm run lint",
+    "prepublish": "npm prune && npm test",
+    "lint": "eslint .",
+    "test": "mocha array-append-x.test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bjarneo/array-append-x.git"
+  },
+  "homepage": "https://github.com/bjarneo/array-append-x",
+  "bugs": {
+    "url": "https://github.com/bjarneo/array-append-x/issues"
+  },
+  "keywords": [
+    "append",
+    "array",
+    "x",
+    "every",
+    "element",
+    "arrays",
+  ],
+  "author": "Bjarne Oeverli",
+  "license": "MIT",
+  "devDependencies": {
+    "mocha": "^2.3.4",
+    "eslint-config-vgno": "^5.0.0",
+    "eslint": "^1.8.0"
+  },
+  "dependencies": {
+    "array-spread": "^1.0.2",
+    "lodash.chunk": "^3.0.1",
+    "lodash.isarray": "^3.0.4"
+  }
+}
